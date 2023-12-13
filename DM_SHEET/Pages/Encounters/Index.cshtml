@@ -1,0 +1,39 @@
+﻿@page
+@model DM_SHEET.Pages.Encounters.IndexModel
+@{
+}
+<link rel="stylesheet" href="~/css/site.css">
+
+<body>
+    <section>
+        <article id="encounterArticle">
+            <div class="t8EncountersDiv">
+                <img class="t8Encounters" src="/img/D8.png" onclick="generateRandomNumberEight()" />
+                <p id="encountersTärning" onclick="generateRandomNumberEight()">1</p>
+                <h2>Encounters</h2>
+            </div>
+
+            <div id="encounters">
+                <h3>T8</h3>
+                <p>1. En T4 vanliga djur attackerar gruppen.</p>
+                <p>2. En man med tanke att råna gruppen om han inte får mynt.</p>
+                <p>3. Ett sovandes troll blockerar vägen.</p>
+                <p>4. En mystisk kvinna som försöker sälja självklart stulna föremål.</p>
+                <p>5. Gruppen blir attackerade av banditer.</p>
+                <p>6. Någon i gruppen skadas av fallande sten eller träd.</p>
+                <p>7. Gruppen snubblar över en mystisk kista med SL valda konsekvenser.</p>
+                <p>8. En griffin flyger runt i området som kan attackera när som helst.</p>
+            </div>
+
+        </article>
+    </section>
+    <script>
+        function generateRandomNumberEight() {
+            // Generate a random number between 1 and 20
+            var randomNumber = Math.floor(Math.random() * 8) + 1;
+
+            // Update the content of the <p> element with the generated number
+            document.getElementById("encountersTärning").innerText = randomNumber;
+        }
+    </script>
+</body>

@@ -7,8 +7,11 @@
 <body>
     <section>
         <article>
-            <!-- content for panel 2 here -->
-            <h2>Vanliga Djur</h2>
+            <div id="vanligaDjurDiv">
+                <img id="paw" src="/img/Hoof.png" />
+                <h3>Vanliga Djur</h3>
+                <img id="paw" src="/img/Paws.png" />
+            </div>
 
             <ul class="columns" id="even">
                 <li>Djur</li>
@@ -95,8 +98,13 @@
             </ul>
         </article>
         <article>
-            <!-- content for panel 3 here -->
-            <h2>Jakt</h2>
+
+            <div class="t6TärningJakt">
+                <img class="t6Jakt" src="/img/D6.png" onclick="generateRandomNumberSix()" />
+                <p id="tärningsKast6Jakt" onclick="generateRandomNumberSix()">1</p>
+                <h2>Jakt</h2>
+                <img id="paw" src="/img/bow-icon.png" />
+            </div>
 
             <ul class="columns" id="even">
                 <li>T6</li>
@@ -151,4 +159,13 @@
 
         </article>
     </section>
+    <script>
+        function generateRandomNumberSix() {
+            // Generate a random number between 1 and 20
+            var randomNumber = Math.floor(Math.random() * 6) + 1;
+
+            // Update the content of the <p> element with the generated number
+            document.getElementById("tärningsKast6Jakt").innerText = randomNumber;
+        }
+    </script>
 </body>

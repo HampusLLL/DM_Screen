@@ -57,11 +57,6 @@ h2 {
     grid-area: d;
 }
 
-#demonNärstrid {
-    display: flex;
-    text-align: center;
-}
-
 .dm-menu {
     display: flex;
     justify-content: space-around;
@@ -190,4 +185,218 @@ article {
 
 #karta {
     width: 100%;
+}
+
+.t20Tärning {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.t20 {
+    width: 5%;
+    height: 5%;
+    margin-top: auto;
+    margin-bottom: auto;
+    cursor: pointer;
+}
+
+#tärningsKast20 {
+    position: absolute;
+    top: 35%; /* Adjust the percentage based on your design */
+    left: 40.6%; /* Adjust the percentage based on your design */
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    cursor: pointer;
+    font-size: small;
+}
+
+.t6Tärning {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.t6 {
+    width: 10%;
+    height: 10%;
+    margin-top: auto;
+    margin-bottom: auto;
+    cursor: pointer;
+}
+
+#tärningsKast6 {
+    position: absolute;
+    top: 17%; /* Adjust the percentage based on your design */
+    left: 27%; /* Adjust the percentage based on your design */
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    cursor: pointer;
+    font-size: small;
+}
+
+#tärningsKast6Avstånd {
+    position: absolute;
+    top: 17%; /* Adjust the percentage based on your design */
+    left: 23%; /* Adjust the percentage based on your design */
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    cursor: pointer;
+    font-size: small;
+}
+
+.t8Tärning {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.t8 {
+    width: 3%;
+    height: 3%;
+    margin-top: auto;
+    margin-bottom: auto;
+    cursor: pointer;
+}
+
+#tärningsKast8 {
+    position: absolute;
+    top: 24%; /* Adjust the percentage based on your design */
+    left: 44.8%; /* Adjust the percentage based on your design */
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    cursor: pointer;
+    font-size: small;
+}
+
+.t6TärningJakt {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.t6Jakt {
+    width: 4%;
+    height: 4%;
+    margin-top: auto;
+    margin-bottom: auto;
+    cursor: pointer;
+}
+
+#tärningsKast6Jakt {
+    position: absolute;
+    top: 27%; /* Adjust the percentage based on your design */
+    left: 43%; /* Adjust the percentage based on your design */
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    cursor: pointer;
+    font-size: small;
+}
+
+.t8EncountersDiv {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.t8Encounters {
+    width: 8%;
+    height: 8%;
+    margin-top: auto;
+    margin-bottom: auto;
+    cursor: pointer;
+}
+
+#encountersTärning {
+    position: absolute;
+    top: 26%; /* Adjust the percentage based on your design */
+    left: 37%; /* Adjust the percentage based on your design */
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    cursor: pointer;
+    font-size: small;
+}
+
+#drakDemonDiv {
+    justify-content: center;
+    display: flex;
+}
+
+#drakIcon {
+    width: 5%;
+    height: 5%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#demonIcon {
+    width: 5%;
+    height: 5%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#drakDiv {
+    display: flex;
+}
+
+#drakIcon2 {
+    width: 3%;
+    height: 3%;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 10px;
+}
+
+#demonDiv {
+    display: flex;
+}
+
+#demonIcon2 {
+    width: 3%;
+    height: 3%;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 10px;
+}
+
+#encounterArticle {
+    flex: none;
+}
+
+#kritiskSvärdDiv {
+    display: flex;
+}
+
+#kritiskSvärd {
+    width: 4%;
+    height: 4%;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 10px;
+}
+
+#liggandeMålDiv {
+    display: flex;
+}
+
+#target {
+    width: 4%;
+    height: 4%;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 10px;
+}
+
+#vanligaDjurDiv {
+    display: flex;
+    justify-content: center;
+}
+
+#paw {
+    width: 4%;
+    height: 4%;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 10px;
 }

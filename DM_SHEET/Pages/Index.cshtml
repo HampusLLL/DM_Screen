@@ -14,7 +14,11 @@
 
         <article id="svåraskador">
 
-            <h2>Svåraskador</h2>
+            <div class="t20Tärning">
+                <img class="t20" src="/img/D20.png" onclick="generateRandomNumberTwenty()" />
+                <p id="tärningsKast20" onclick="generateRandomNumberTwenty()">1</p>
+                <h2>Svåraskador</h2>
+            </div>
 
             <ul class="columns" id="even">
                 <li>T20</li>
@@ -109,11 +113,17 @@
         </article>
 
         <article id="drak-demonslag">
-
-            <h2>Drak/Demonslag</h2>
+            <div id="drakDemonDiv">
+                <img id="drakIcon" src="/img/Dragon_Icon.png"/>
+                <h2>Drak/Demonslag</h2>
+                <img id="demonIcon" src="/img/Demon_Icon.png"/>
+            </div>
 
             <div>
-                <h3>Drakslag</h3>
+                <div id="drakDiv">
+                    <h3>Drakslag</h3>
+                    <img id="drakIcon2" src="/img/Dragon_Icon.png" />
+                </div>
 
                 <p>Om du slår en etta (1) på din T20 lyckas du särskilt väl med din handling. Detta kallas ett drakslag. I strid har darakslag särskilda effekter, till exempel att en attack gör mer skada. Utanför stid avgör SL effekten av ett drakslag</p>
                 <p>Här är några förslag:</p>
@@ -125,7 +135,10 @@
             </div>
 
             <div>
-                <h3>Demonslag</h3>
+                <div id="demonDiv">
+                    <h3>Demonslag</h3>
+                    <img id="demonIcon2" src="/img/Demon_Icon.png" />
+                </div>
 
                 <p>Att slå 20 på din T20 kallas demonslag och innebär att slaget misslyckas oavsett ditt FV och andra omständigheter. Om du slår ett demonslag kan slaget inte pressas. Demonslag kan även ha ytterligare negativa effekter i strid och besvärjande. Utanför strid kan SL exempelvis låta ett demonslag innebära följande:</p>
                 <ul>
@@ -135,9 +148,13 @@
                 </ul>
             </div>
 
-            <section id="demonNärstrid">
-                <div>
-                    <h3>Demonslag i närstrid</h3>
+            <section>
+                <div id="demonNärstrid">
+                    <div class="t6Tärning">
+                        <img class="t6" src="/img/D6.png" onclick="generateRandomNumberSix()" />
+                        <p id="tärningsKast6" onclick="generateRandomNumberSix()">1</p>
+                        <h3>Demonslag i närstrid</h3>
+                    </div>
 
                     <ul class="columns" id="even">
                         <li>T6</li>
@@ -177,7 +194,12 @@
                 </div>
 
                 <div id="demonAvstånd">
-                    <h3>Demonslag i avståndsstrid</h3>
+
+                    <div class="t6Tärning">
+                        <img class="t6" src="/img/D6.png" onclick="generateRandomNumberSixAvstånd()" />
+                        <p id="tärningsKast6Avstånd" onclick="generateRandomNumberSixAvstånd()">1</p>
+                        <h3>Demonslag i avståndsstrid</h3>
+                    </div>
 
                     <ul class="columns" id="even">
                         <li>T6</li>
@@ -222,12 +244,18 @@
         <article id="kritiskträff">
 
             <div>
-                <h3>Liggande mål</h3>
+                <div id="liggandeMålDiv">
+                    <h3>Liggande mål</h3>
+                    <img id="target" src="/img/target.png" />
+                </div>
                 <p>Om du står upp men din fiende ligger på marken får du en fördel på attacken, och träffar gör T6 extra i skada.</p>
             </div>
 
             <div>
-                <h3>Kritisk träff</h3>
+                <div id="kritiskSvärdDiv">
+                    <h3>Kritisk träff</h3>
+                    <img id="kritiskSvärd" src="/img/CritSword.png"/>
+                </div>
 
                 <p>Om du slår ett drakslag när du anfaller får du in en kritiskträff. Det innebär att det krävs ett drakslag för att parera attacken eller ducka, samt att du får välja en av nedanstående effekter:</p>
                 <ul id="kritiskträff-effekter">
@@ -240,7 +268,11 @@
 
         <article id="skräckTabellen">
 
-            <h2>Skräcktabellen</h2>
+            <div class="t8Tärning">
+                <img class="t8" src="/img/D8.png" onclick="generateRandomNumberEight()" />
+                <p id="tärningsKast8" onclick="generateRandomNumberEight()">1</p>
+                <h2>Skräcktabellen</h2>
+            </div>
 
             <ul class="columns" id="even">
                 <li>T8</li>
@@ -290,4 +322,37 @@
         </article>
 
     </section>
+    <script>
+        function generateRandomNumberTwenty() {
+            // Generate a random number between 1 and 20
+            var randomNumber = Math.floor(Math.random() * 20) + 1;
+
+            // Update the content of the <p> element with the generated number
+            document.getElementById("tärningsKast20").innerText = randomNumber;
+        }
+
+        function generateRandomNumberSix() {
+            // Generate a random number between 1 and 20
+            var randomNumber = Math.floor(Math.random() * 6) + 1;
+
+            // Update the content of the <p> element with the generated number
+            document.getElementById("tärningsKast6").innerText = randomNumber;
+        }
+
+        function generateRandomNumberSixAvstånd() {
+            // Generate a random number between 1 and 20
+            var randomNumber = Math.floor(Math.random() * 6) + 1;
+
+            // Update the content of the <p> element with the generated number
+            document.getElementById("tärningsKast6Avstånd").innerText = randomNumber;
+        }
+
+        function generateRandomNumberEight() {
+            // Generate a random number between 1 and 20
+            var randomNumber = Math.floor(Math.random() * 8) + 1;
+
+            // Update the content of the <p> element with the generated number
+            document.getElementById("tärningsKast8").innerText = randomNumber;
+        }
+    </script>
 </body>
