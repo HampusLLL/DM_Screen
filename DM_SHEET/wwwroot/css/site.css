@@ -306,8 +306,8 @@ article {
 }
 
 .t8Encounters {
-    width: 8%;
-    height: 8%;
+    width: 5%;
+    height: 5%;
     margin-top: auto;
     margin-bottom: auto;
     cursor: pointer;
@@ -315,8 +315,28 @@ article {
 
 #encountersTärning {
     position: absolute;
-    top: 26%; /* Adjust the percentage based on your design */
-    left: 37%; /* Adjust the percentage based on your design */
+    top: 27%; /* Adjust the percentage based on your design */
+    left: 40.4%; /* Adjust the percentage based on your design */
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    cursor: pointer;
+    font-size: small;
+}
+
+#encountersTärning1 {
+    position: absolute;
+    top: 25%; /* Adjust the percentage based on your design */
+    left: 40.4%; /* Adjust the percentage based on your design */
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    cursor: pointer;
+    font-size: small;
+}
+
+#encountersTärning2 {
+    position: absolute;
+    top: 25%; /* Adjust the percentage based on your design */
+    left: 40.4%; /* Adjust the percentage based on your design */
     transform: translate(-50%, -50%);
     z-index: 1;
     cursor: pointer;
@@ -366,7 +386,7 @@ article {
     padding: 10px;
 }
 
-#encounterArticle {
+.encounterArticle {
     flex: none;
 }
 
@@ -461,4 +481,15 @@ article {
     text-align: center;
     padding-top: 10rem;
     -webkit-text-stroke: 5px black; /* WebKit/Blink browsers */
+}
+
+#tree {
+    width: 6%;
+    height: 6%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#encounterSec {
+    display: grid;
 }
