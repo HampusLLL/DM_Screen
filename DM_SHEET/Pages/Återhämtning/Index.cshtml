@@ -1,39 +1,46 @@
 ﻿@page
 @model DM_SHEET.Pages.Återhämtning.IndexModel
 @{
+    ViewData["Title"] = "DM Screen";
 }
+<link rel="stylesheet" href="~/css/site.css">
+
 <body>
-    <section>
+    <section id="återhämtningSec">
         <article id="återhämtning">
 
-            <h2>Återhämtning</h2>
+            <div id="återhämtningDiv">
+                <img class="health" src="/img/Health.png"/>
+                <h2>Återhämtning</h2>
+                <img class="health" src="/img/Health.png" />
+            </div>
 
             <p>Förlorade KP återhämtas genom vila. Det finns tre sorters vila - snabb, kort och lång. Under en vila kan du inte utföra handlingar som kräver tärningsslag.</p>
 
-            <div>
-                <h3>Snabb vila:</h3>
+        </article>
 
-                <p>Du hämtar andan i en runda och återfår T6 VP.</p>
-            </div>
+        <article id="snabbVila">
+            <h3>Snabb vila:</h3>
 
-            <div>
-                <h3>Kort vila:</h3>
+            <p>Du hämtar andan i en runda och återfår T6 VP.</p>
+        </article>
 
-                <p>En kort vila tar en kvart i anspråk. Under en kort vila läker du T6 förlorade KP, eller 2T6 KP om en annan person vårdar dig och lyckas med ett slag mot LÄKEKONST. Den som vårdar kan inte själv vila, och kan bara vårda en person under vilan.</p>
-            </div>
+        <article id="kortVila">
+            <h3>Kort vila:</h3>
 
-            <div>
-                <h3>Långvila:</h3>
+            <p>En kort vila tar en kvart i anspråk. Under en kort vila läker du T6 förlorade KP, eller 2T6 KP om en annan person vårdar dig och lyckas med ett slag mot LÄKEKONST. Den som vårdar kan inte själv vila, och kan bara vårda en person under vilan.</p>
+        </article>
 
-                <p>En lång vila tar ett skift i anspråk, och kan bara utföras på en säker plats utan fiender i närheten. Under en lång vila läker du alla förlorade KP och läker alla tillstånd.</p>
-            </div>
+        <article id="långVila">
+            <h3>Långvila:</h3>
 
-            <div>
-                <h3>Magi:</h3>
+            <p>En lång vila tar ett skift i anspråk, och kan bara utföras på en säker plats utan fiender i närheten. Under en lång vila läker du alla förlorade KP och läker alla tillstånd.</p>
+        </article>
 
-                <p>Magiska besvärjelser kan låta dig läka KP snabbare än normalt.</p>
-            </div>
+        <article id="magi">
+            <h3>Magi:</h3>
 
+            <p>Magiska besvärjelser kan låta dig läka KP snabbare än normalt.</p>
         </article>
     </section>
 </body>

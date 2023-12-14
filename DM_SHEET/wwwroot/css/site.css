@@ -114,12 +114,17 @@ header {
     display: flex;
     gap: 20px;
     padding: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.575);
 }
 
 #pageList li {
     padding: 10px;
     margin: auto;
     text-decoration: none;
+}
+
+#pageList li:hover {
+    font-size: 17px;
 }
 
 #pageList a {
@@ -134,10 +139,11 @@ header {
 }
 
 #logoContainer {
-    display: flex;
-    align-items: center;
+    justify-content: center;
     background-color: #0e2225;
     padding: 10px;
+    padding-bottom: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.596);
 }
 
 #logoContainer img {
@@ -399,4 +405,60 @@ article {
     margin-top: auto;
     margin-bottom: auto;
     padding: 10px;
+}
+
+#återhämtningSec {
+    display: grid;
+    grid-template:
+    "a a"
+    "b c"
+    "d e" ;
+}
+
+#återhämtning {
+    grid-area: a;
+}
+
+#snabbVila {
+    grid-area: b;
+}
+
+#kortVila {
+    grid-area: c;
+}
+
+#långVila {
+    grid-area: d;
+}
+
+#magi {
+    grid-area: e;
+}
+
+#återhämtningDiv {
+    display: flex;
+    justify-content: center;
+}
+
+.health {
+    width: 2%;
+    height: 2%;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 10px;
+}
+
+#dod {
+    background-image: url('/img/dod.png'); /* Replace 'path/to/your/image.jpg' with the actual path to your image file */
+    background-size: cover; /* Ensures the background image covers the entire container */ /* Centers the background image */
+    background-repeat: no-repeat;
+}
+
+#dodText {
+    color: white;
+    font-size: 8rem;
+    cursor: default;
+    text-align: center;
+    padding-top: 10rem;
+    -webkit-text-stroke: 5px black; /* WebKit/Blink browsers */
 }
